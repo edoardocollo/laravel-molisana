@@ -1,0 +1,12 @@
+.main_nav {
+  display: flex;
+  justify-content: center;
+  ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    li {
+      margin: 20px;
+    };
+  };
+}
