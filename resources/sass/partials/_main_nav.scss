@@ -6,7 +6,11 @@
     justify-content: center;
     list-style: none;
     li {
-      margin: 20px;
+      margin: 2px;
+      padding: 20px;
+    };
+    li:hover {
+      background-color: #B3E5FC;
     };
   };
 }
