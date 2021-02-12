@@ -24,9 +24,9 @@
         <nav class="main_nav">
 
           <ul>
-            <li> <a href="/">home</a> </li>
-            <li> <a href="/prodotti">prodotti</a> </li>
-            <li> <a href="/contatti">contatti</a> </li>
+            <li class="{{Route::currentRouteName() === 'home' ? 'active' : ''}}"> <a href="/">home</a> </li>
+            <li class="{{Route::currentRouteName() === 'prodotti' ? 'active':''}}"> <a href="/prodotti" >prodotti</a> </li>
+            <li class="{{Route::currentRouteName() === 'contatti' ? 'active':''}}"> <a href="/contatti" >contatti</a> </li>
           </ul>
 
         </nav>

@@ -15,7 +15,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-});
+})-> name('home');
+
+
 Route::get('/prodotti', function () {
     $data = file_get_contents('../resources/data.json');
     $dataEncoded = json_decode($data, true );
@@ -24,19 +26,15 @@ Route::get('/prodotti', function () {
       if (!array_key_exists($data['tipo'],$dataFinal)) {
         $dataFinal[$data['tipo']] = [];
         array_push($dataFinal[$data['tipo']], $data);
-
-        // code...
       } else {
         array_push($dataFinal[$data['tipo']], $data);
-
       }
-      // code...
     }
     $dataEncoded = $dataFinal;
-    // var_dump($dataEncoded);
-
     return view('prodotti', compact('dataEncoded'));
-});
+})-> name('prodotti');
+
+
 Route::get('/contatti', function () {
     return view('contatti');
-});
+})-> name('contatti');

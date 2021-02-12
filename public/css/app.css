@@ -26,6 +26,10 @@ h3 {
   text-transform: uppercase;
 }
 
+footer {
+  font-family: "Teko", sans-serif;
+}
+
 .jumbotron {
   display: flex;
   justify-content: center;
@@ -48,6 +52,10 @@ h3 {
 }
 
 .main_nav ul li:hover {
+  background-color: #B3E5FC;
+}
+
+.main_nav ul .active {
   background-color: #B3E5FC;
 }
 
@@ -100,5 +108,55 @@ h3 {
 
 .main_content .blog_row .card .overlay:hover {
   opacity: 1;
+}
+
+footer {
+  color: #808080;
+}
+
+footer .footer_wrap {
+  display: flex;
+  width: 60%;
+  margin: auto;
+  padding-top: 20px;
+}
+
+footer .footer_wrap .footer_col {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  padding-left: 15px;
+}
+
+footer .footer_wrap .footer_col ul {
+  margin: 20px 0;
+  list-style: none;
+  font-size: 23px;
+  font-weight: 300;
+}
+
+footer .footer_wrap .footer_col ul li {
+  text-transform: capitalize;
+}
+
+footer .footer_wrap .footer_col ul li:first-child {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #001942;
+  margin-bottom: 10px;
+}
+
+footer .footer_wrap .footer_text {
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+footer .footer_wrap .footer_text a {
+  text-decoration: none;
+  color: #808080;
+}
+
+footer .footer_wrap .footer_text img {
+  width: 100px;
 }
 
