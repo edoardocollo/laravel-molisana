@@ -20,6 +20,12 @@ h2 {
   text-transform: uppercase;
 }
 
+h3 {
+  font-family: "Teko", sans-serif;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
 .jumbotron {
   display: flex;
   justify-content: center;
@@ -64,11 +70,35 @@ h2 {
 }
 
 .main_content .blog_row .card {
+  position: relative;
   width: 33.33%;
   padding: 30px 25px;
 }
 
 .main_content .blog_row .card img {
   width: 100%;
+}
+
+.main_content .blog_row .card .overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 49.6%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 50px);
+  height: calc(100% - 64px);
+  background-color: rgba(255, 255, 0, 0.5);
+  opacity: 0;
+}
+
+.main_content .blog_row .card .overlay img {
+  height: 50px;
+}
+
+.main_content .blog_row .card .overlay:hover {
+  opacity: 1;
 }
 

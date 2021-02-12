@@ -12,11 +12,32 @@
       padding: 0 25px;
     };
     .card {
+      position: relative;
       width: 33.33%;
       padding: 30px 25px;
       img {
         width: 100%;
-      }
+      };
+      .overlay {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 49.6%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: calc(100% - 50px);
+        height: calc(100% - 64px);
+        background-color: rgba(255,255,0,.5);
+        opacity: 0;
+        img {
+          height: 50px;
+        };
+      };
+      .overlay:hover{
+        opacity: 1;
+      };
     }
   }
 }
