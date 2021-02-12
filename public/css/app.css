@@ -10,6 +10,14 @@
   text-decoration: none;
   font-size: 25px;
   font-weight: 400;
+  text-transform: capitalize;
+}
+
+h2 {
+  font-family: "Teko", sans-serif;
+  font-size: 65px;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 .jumbotron {
@@ -38,6 +46,29 @@
 }
 
 .main_content {
-  height: 600px;
+  background-repeat: repeat;
+  padding: 60px 0;
+}
+
+.main_content .blog_row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.main_content .blog_row h2 {
+  width: 100%;
+  text-align: center;
+  padding: 0 25px;
+}
+
+.main_content .blog_row .card {
+  width: 33.33%;
+  padding: 30px 25px;
+}
+
+.main_content .blog_row .card img {
+  width: 100%;
 }
 

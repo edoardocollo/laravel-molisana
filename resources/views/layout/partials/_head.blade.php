@@ -19,9 +19,6 @@
 
         <!-- JUMBOTRON -->
         @yield('jumbotron')
-        <!-- <div class="jumbotron">
-          <img src="{{ asset('img/logo.png')}}" alt="">
-        </div> -->
 
         <!-- MAIN NAV -->
         <nav class="main_nav">
