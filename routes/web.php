@@ -19,18 +19,8 @@ Route::get('/', function () {
 
 
 Route::get('/prodotti', function () {
-    $data = file_get_contents('../resources/data.json');
-    $dataEncoded = json_decode($data, true );
-    $dataFinal = [];
-    foreach ($dataEncoded['data'] as $data) {
-      if (!array_key_exists($data['tipo'],$dataFinal)) {
-        $dataFinal[$data['tipo']] = [];
-        array_push($dataFinal[$data['tipo']], $data);
-      } else {
-        array_push($dataFinal[$data['tipo']], $data);
-      }
-    }
-    $dataEncoded = $dataFinal;
+  include 'partials/db_convert.php';
+
     return view('prodotti', compact('dataEncoded'));
 })-> name('prodotti');
 
@@ -40,18 +30,7 @@ Route::get('/contatti', function () {
 })-> name('contatti');
 
 Route::get('/prodotti/{key1}/{key2}', function ($key1,$key2) {
-  $data = file_get_contents('../resources/data.json');
-  $dataEncoded = json_decode($data, true );
-  $dataFinal = [];
-  foreach ($dataEncoded['data'] as $data) {
-    if (!array_key_exists($data['tipo'],$dataFinal)) {
-      $dataFinal[$data['tipo']] = [];
-      array_push($dataFinal[$data['tipo']], $data);
-    } else {
-      array_push($dataFinal[$data['tipo']], $data);
-    }
-  }
-  $dataEncoded = $dataFinal;
+  include 'partials/db_convert.php';
   $prodotto = $dataEncoded[$key1][$key2];
   return view('prodotto',compact('prodotto'));
 });

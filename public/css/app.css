@@ -128,6 +128,7 @@ footer {
 }
 
 .home_content .home_row .home_col {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -143,6 +144,7 @@ footer {
 }
 
 .home_content .home_row .home_col .home_row2 .home_col2 {
+  position: relative;
   width: 50%;
   height: 100%;
   overflow: hidden;
@@ -150,6 +152,31 @@ footer {
 
 .home_content img {
   height: 105%;
+}
+
+.main_overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  opacity: 0;
+}
+
+.main_overlay img {
+  height: 100px;
+}
+
+.main_overlay p {
+  font-size: 30px;
+}
+
+.main_overlay:hover {
+  opacity: 0.5;
 }
 
 .product_container {
