@@ -60,6 +60,7 @@ footer {
 }
 
 .main_content {
+  margin-top: 10px;
   background-repeat: repeat;
   padding: 60px 0;
 }
@@ -108,6 +109,42 @@ footer {
 
 .main_content .blog_row .card .overlay:hover {
   opacity: 1;
+}
+
+.home_content {
+  margin: 20px 0;
+}
+
+.home_content .home_row {
+  display: flex;
+  width: 98vw;
+  height: 49vw;
+  margin: auto;
+}
+
+.home_content .home_row .home_col {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.home_content .home_row .home_col .home_row2 {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+
+.home_content .home_row .home_col .home_row2 .home_col2 {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.home_content img {
+  height: 105%;
 }
 
 footer {
